@@ -22,7 +22,6 @@
 //    NSString *html = [[NSString alloc] initWithContentsOfFile:filePath];
     
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-//    [webView stringByEvaluatingJavaScriptFromString:@"myFunction(){alert(\"你好\")};"];
     self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
      [self.view addSubview:self.webView];
@@ -133,6 +132,8 @@
 #pragma mark -
 #pragma mark UIWebViewDelegate
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSLog(@"1");
+    [webView stringByEvaluatingJavaScriptFromString:@"a();"];
     if ( [request.mainDocumentURL.relativePath isEqualToString:@"/click/false"] ) {
         NSLog( @"not clicked" );
         return false;
@@ -151,12 +152,18 @@
 }
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
+    NSLog(@"2");
 	NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 	NSLog(@"title11=%@",title);
-	
+//    [webView stringByEvaluatingJavaScriptFromString:@"myFunction(){alert(\"你好\")};"];
+//    [webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
+//    [webView stringByEvaluatingJavaScriptFromString:@"alert('hello')"];
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+
+    
+    NSLog(@"3");
 	NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 	NSLog(@"title=%@",title);
 	[self.webView stringByEvaluatingJavaScriptFromString:@"var field = document.getElementById('field_2');"

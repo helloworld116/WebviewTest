@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E91AECC173CFCA2004F4B40 /* LineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AECB173CFCA2004F4B40 /* LineViewController.m */; };
+		0E91AED0173CFCB8004F4B40 /* PieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AECF173CFCB8004F4B40 /* PieViewController.m */; };
+		0E91AEDB173CFE07004F4B40 /* MSLine4.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED2173CFE07004F4B40 /* MSLine4.js */; };
+		0E91AEDC173CFE07004F4B40 /* firebug-lite.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED3173CFE07004F4B40 /* firebug-lite.js */; };
+		0E91AEDD173CFE07004F4B40 /* FusionCharts.HC.Charts.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED4173CFE07004F4B40 /* FusionCharts.HC.Charts.js */; };
+		0E91AEDE173CFE07004F4B40 /* FusionCharts.HC.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED5173CFE07004F4B40 /* FusionCharts.HC.js */; };
+		0E91AEDF173CFE07004F4B40 /* FusionCharts.jqueryplugin.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED6173CFE07004F4B40 /* FusionCharts.jqueryplugin.js */; };
+		0E91AEE0173CFE07004F4B40 /* FusionCharts.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED7173CFE07004F4B40 /* FusionCharts.js */; };
+		0E91AEE1173CFE07004F4B40 /* FusionChartsExportComponent.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */; };
+		0E91AEE2173CFE07004F4B40 /* jquery.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED9173CFE07004F4B40 /* jquery.min.js */; };
+		0E91AEE3173CFE07004F4B40 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AEDA173CFE07004F4B40 /* data.json */; };
 		47F55FA4173BE2B2001ADF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA3173BE2B2001ADF89 /* UIKit.framework */; };
 		47F55FA6173BE2B2001ADF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA5173BE2B2001ADF89 /* Foundation.framework */; };
 		47F55FA8173BE2B2001ADF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA7173BE2B2001ADF89 /* CoreGraphics.framework */; };
@@ -27,6 +38,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E91AECA173CFCA2004F4B40 /* LineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineViewController.h; sourceTree = "<group>"; };
+		0E91AECB173CFCA2004F4B40 /* LineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineViewController.m; sourceTree = "<group>"; };
+		0E91AECE173CFCB8004F4B40 /* PieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieViewController.h; sourceTree = "<group>"; };
+		0E91AECF173CFCB8004F4B40 /* PieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieViewController.m; sourceTree = "<group>"; };
+		0E91AED2173CFE07004F4B40 /* MSLine4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MSLine4.js; sourceTree = "<group>"; };
+		0E91AED3173CFE07004F4B40 /* firebug-lite.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "firebug-lite.js"; sourceTree = "<group>"; };
+		0E91AED4173CFE07004F4B40 /* FusionCharts.HC.Charts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionCharts.HC.Charts.js; sourceTree = "<group>"; };
+		0E91AED5173CFE07004F4B40 /* FusionCharts.HC.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionCharts.HC.js; sourceTree = "<group>"; };
+		0E91AED6173CFE07004F4B40 /* FusionCharts.jqueryplugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionCharts.jqueryplugin.js; sourceTree = "<group>"; };
+		0E91AED7173CFE07004F4B40 /* FusionCharts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionCharts.js; sourceTree = "<group>"; };
+		0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionChartsExportComponent.js; sourceTree = "<group>"; };
+		0E91AED9173CFE07004F4B40 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		0E91AEDA173CFE07004F4B40 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		47F55FA0173BE2B2001ADF89 /* WebviewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebviewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F55FA3173BE2B2001ADF89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47F55FA5173BE2B2001ADF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E91AED1173CFDF2004F4B40 /* FusionCharts */ = {
+			isa = PBXGroup;
+			children = (
+				0E91AED2173CFE07004F4B40 /* MSLine4.js */,
+				0E91AED3173CFE07004F4B40 /* firebug-lite.js */,
+				0E91AED4173CFE07004F4B40 /* FusionCharts.HC.Charts.js */,
+				0E91AED5173CFE07004F4B40 /* FusionCharts.HC.js */,
+				0E91AED6173CFE07004F4B40 /* FusionCharts.jqueryplugin.js */,
+				0E91AED7173CFE07004F4B40 /* FusionCharts.js */,
+				0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */,
+				0E91AED9173CFE07004F4B40 /* jquery.min.js */,
+				0E91AEDA173CFE07004F4B40 /* data.json */,
+			);
+			name = FusionCharts;
+			sourceTree = "<group>";
+		};
 		47F55F97173BE2B2001ADF89 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +135,7 @@
 		47F55FA9173BE2B2001ADF89 /* WebviewTest */ = {
 			isa = PBXGroup;
 			children = (
+				0E91AED1173CFDF2004F4B40 /* FusionCharts */,
 				47F55FD0173C0530001ADF89 /* jscharts.js */,
 				47F55FCC173C051F001ADF89 /* chart_bg.jpg */,
 				47F55FCD173C051F001ADF89 /* index.html */,
@@ -107,6 +148,10 @@
 				47F55FC6173BE3D8001ADF89 /* test.js */,
 				47F55FC8173BE8CD001ADF89 /* test.css */,
 				47F55FCA173BE912001ADF89 /* test.html */,
+				0E91AECA173CFCA2004F4B40 /* LineViewController.h */,
+				0E91AECB173CFCA2004F4B40 /* LineViewController.m */,
+				0E91AECE173CFCB8004F4B40 /* PieViewController.h */,
+				0E91AECF173CFCB8004F4B40 /* PieViewController.m */,
 			);
 			path = WebviewTest;
 			sourceTree = "<group>";
@@ -185,6 +230,7 @@
 				47F55FCB173BE912001ADF89 /* test.html in Resources */,
 				47F55FCE173C051F001ADF89 /* chart_bg.jpg in Resources */,
 				47F55FCF173C051F001ADF89 /* index.html in Resources */,
+				0E91AEE3173CFE07004F4B40 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +246,16 @@
 				47F55FC0173BE2B3001ADF89 /* ViewController.m in Sources */,
 				47F55FC7173BE3D8001ADF89 /* test.js in Sources */,
 				47F55FD1173C0530001ADF89 /* jscharts.js in Sources */,
+				0E91AECC173CFCA2004F4B40 /* LineViewController.m in Sources */,
+				0E91AED0173CFCB8004F4B40 /* PieViewController.m in Sources */,
+				0E91AEDB173CFE07004F4B40 /* MSLine4.js in Sources */,
+				0E91AEDC173CFE07004F4B40 /* firebug-lite.js in Sources */,
+				0E91AEDD173CFE07004F4B40 /* FusionCharts.HC.Charts.js in Sources */,
+				0E91AEDE173CFE07004F4B40 /* FusionCharts.HC.js in Sources */,
+				0E91AEDF173CFE07004F4B40 /* FusionCharts.jqueryplugin.js in Sources */,
+				0E91AEE0173CFE07004F4B40 /* FusionCharts.js in Sources */,
+				0E91AEE1173CFE07004F4B40 /* FusionChartsExportComponent.js in Sources */,
+				0E91AEE2173CFE07004F4B40 /* jquery.min.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +380,7 @@
 				47F55FC5173BE2B3001ADF89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
