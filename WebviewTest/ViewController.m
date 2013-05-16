@@ -8,23 +8,23 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 @property (nonatomic,retain) UIWebView *webView;
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //    NSString *html = [[NSString alloc] initWithContentsOfFile:filePath];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
-//    NSString *html = [[NSString alloc] initWithContentsOfFile:filePath];
     
-    self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    self.webView = [[UIWebView alloc]         initWithFrame:self.view.bounds];
     self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
-     [self.view addSubview:self.webView];
+    [self.view addSubview:self.webView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,16 +98,16 @@
 ////
 ////     "}\";"
 ////     "document.getElementById('wzg').appendChild(script);"];
-////    
+////
 ////    [webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
-//    
+//
 ////    [webView stringByEvaluatingJavaScriptFromString:@"var script = document.createElement('script');"
 ////     "script.type = 'text/javascript';"
 ////     "script.text = \"function myFunction() { "
 ////     "alert('shit')"
 ////     "}\";"
 ////     "document.getElementsByTagName('head')[0].appendChild(script);"];
-////    
+////
 ////    [webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
 //
 //    NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
@@ -126,7 +126,7 @@
 //    //    [myWebView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
 //}
 //- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-//{ 
+//{
 //}
 
 #pragma mark -
@@ -155,13 +155,13 @@
     NSLog(@"2");
 	NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 	NSLog(@"title11=%@",title);
-//    [webView stringByEvaluatingJavaScriptFromString:@"myFunction(){alert(\"你好\")};"];
-//    [webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
-//    [webView stringByEvaluatingJavaScriptFromString:@"alert('hello')"];
+    //    [webView stringByEvaluatingJavaScriptFromString:@"myFunction(){alert(\"你好\")};"];
+    //    [webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
+    //    [webView stringByEvaluatingJavaScriptFromString:@"alert('hello')"];
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-
+    
     
     NSLog(@"3");
 	NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];

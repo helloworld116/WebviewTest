@@ -9,15 +9,19 @@
 /* Begin PBXBuildFile section */
 		0E91AECC173CFCA2004F4B40 /* LineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AECB173CFCA2004F4B40 /* LineViewController.m */; };
 		0E91AED0173CFCB8004F4B40 /* PieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AECF173CFCB8004F4B40 /* PieViewController.m */; };
-		0E91AEDB173CFE07004F4B40 /* MSLine4.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED2173CFE07004F4B40 /* MSLine4.js */; };
-		0E91AEDC173CFE07004F4B40 /* firebug-lite.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED3173CFE07004F4B40 /* firebug-lite.js */; };
-		0E91AEDD173CFE07004F4B40 /* FusionCharts.HC.Charts.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED4173CFE07004F4B40 /* FusionCharts.HC.Charts.js */; };
-		0E91AEDE173CFE07004F4B40 /* FusionCharts.HC.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED5173CFE07004F4B40 /* FusionCharts.HC.js */; };
-		0E91AEDF173CFE07004F4B40 /* FusionCharts.jqueryplugin.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED6173CFE07004F4B40 /* FusionCharts.jqueryplugin.js */; };
-		0E91AEE0173CFE07004F4B40 /* FusionCharts.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED7173CFE07004F4B40 /* FusionCharts.js */; };
-		0E91AEE1173CFE07004F4B40 /* FusionChartsExportComponent.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */; };
-		0E91AEE2173CFE07004F4B40 /* jquery.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AED9173CFE07004F4B40 /* jquery.min.js */; };
 		0E91AEE3173CFE07004F4B40 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AEDA173CFE07004F4B40 /* data.json */; };
+		4795526A17451AE600D05394 /* MSLine4.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED2173CFE07004F4B40 /* MSLine4.js */; };
+		4795526B17451AE600D05394 /* firebug-lite.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED3173CFE07004F4B40 /* firebug-lite.js */; };
+		4795526C17451AE600D05394 /* FusionCharts.HC.Charts.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED4173CFE07004F4B40 /* FusionCharts.HC.Charts.js */; };
+		4795526D17451AE600D05394 /* FusionCharts.HC.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED5173CFE07004F4B40 /* FusionCharts.HC.js */; };
+		4795526E17451AE600D05394 /* FusionCharts.jqueryplugin.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED6173CFE07004F4B40 /* FusionCharts.jqueryplugin.js */; };
+		4795526F17451AE600D05394 /* FusionCharts.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED7173CFE07004F4B40 /* FusionCharts.js */; };
+		4795527017451AE600D05394 /* FusionChartsExportComponent.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */; };
+		4795527117451AE600D05394 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E91AED9173CFE07004F4B40 /* jquery.min.js */; };
+		4795527417453EC700D05394 /* ichartjsLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4795527317453EC700D05394 /* ichartjsLineViewController.m */; };
+		4795527717453ED500D05394 /* ichartjsPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4795527617453ED500D05394 /* ichartjsPieViewController.m */; };
+		4795527A17453F9800D05394 /* ichart.1.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4795527817453F8900D05394 /* ichart.1.1.min.js */; };
+		4795527E1745434200D05394 /* ichartjs_line.html in Resources */ = {isa = PBXBuildFile; fileRef = 4795527D1745434200D05394 /* ichartjs_line.html */; };
 		47F55FA4173BE2B2001ADF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA3173BE2B2001ADF89 /* UIKit.framework */; };
 		47F55FA6173BE2B2001ADF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA5173BE2B2001ADF89 /* Foundation.framework */; };
 		47F55FA8173BE2B2001ADF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F55FA7173BE2B2001ADF89 /* CoreGraphics.framework */; };
@@ -29,12 +33,10 @@
 		47F55FBA173BE2B3001ADF89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FB9173BE2B3001ADF89 /* Default-568h@2x.png */; };
 		47F55FBD173BE2B3001ADF89 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FBB173BE2B3001ADF89 /* MainStoryboard.storyboard */; };
 		47F55FC0173BE2B3001ADF89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F55FBF173BE2B3001ADF89 /* ViewController.m */; };
-		47F55FC7173BE3D8001ADF89 /* test.js in Sources */ = {isa = PBXBuildFile; fileRef = 47F55FC6173BE3D8001ADF89 /* test.js */; };
 		47F55FC9173BE8CD001ADF89 /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FC8173BE8CD001ADF89 /* test.css */; };
 		47F55FCB173BE912001ADF89 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FCA173BE912001ADF89 /* test.html */; };
 		47F55FCE173C051F001ADF89 /* chart_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FCC173C051F001ADF89 /* chart_bg.jpg */; };
 		47F55FCF173C051F001ADF89 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 47F55FCD173C051F001ADF89 /* index.html */; };
-		47F55FD1173C0530001ADF89 /* jscharts.js in Sources */ = {isa = PBXBuildFile; fileRef = 47F55FD0173C0530001ADF89 /* jscharts.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,12 @@
 		0E91AED8173CFE07004F4B40 /* FusionChartsExportComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FusionChartsExportComponent.js; sourceTree = "<group>"; };
 		0E91AED9173CFE07004F4B40 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 		0E91AEDA173CFE07004F4B40 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		4795527217453EC700D05394 /* ichartjsLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ichartjsLineViewController.h; sourceTree = "<group>"; };
+		4795527317453EC700D05394 /* ichartjsLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ichartjsLineViewController.m; sourceTree = "<group>"; };
+		4795527517453ED500D05394 /* ichartjsPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ichartjsPieViewController.h; sourceTree = "<group>"; };
+		4795527617453ED500D05394 /* ichartjsPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ichartjsPieViewController.m; sourceTree = "<group>"; };
+		4795527817453F8900D05394 /* ichart.1.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ichart.1.1.min.js; sourceTree = "<group>"; };
+		4795527D1745434200D05394 /* ichartjs_line.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ichartjs_line.html; sourceTree = "<group>"; };
 		47F55FA0173BE2B2001ADF89 /* WebviewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebviewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F55FA3173BE2B2001ADF89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47F55FA5173BE2B2001ADF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +143,7 @@
 		47F55FA9173BE2B2001ADF89 /* WebviewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4795527D1745434200D05394 /* ichartjs_line.html */,
 				0E91AED1173CFDF2004F4B40 /* FusionCharts */,
 				47F55FD0173C0530001ADF89 /* jscharts.js */,
 				47F55FCC173C051F001ADF89 /* chart_bg.jpg */,
@@ -147,11 +156,16 @@
 				47F55FAA173BE2B2001ADF89 /* Supporting Files */,
 				47F55FC6173BE3D8001ADF89 /* test.js */,
 				47F55FC8173BE8CD001ADF89 /* test.css */,
+				4795527817453F8900D05394 /* ichart.1.1.min.js */,
 				47F55FCA173BE912001ADF89 /* test.html */,
 				0E91AECA173CFCA2004F4B40 /* LineViewController.h */,
 				0E91AECB173CFCA2004F4B40 /* LineViewController.m */,
 				0E91AECE173CFCB8004F4B40 /* PieViewController.h */,
 				0E91AECF173CFCB8004F4B40 /* PieViewController.m */,
+				4795527217453EC700D05394 /* ichartjsLineViewController.h */,
+				4795527317453EC700D05394 /* ichartjsLineViewController.m */,
+				4795527517453ED500D05394 /* ichartjsPieViewController.h */,
+				4795527617453ED500D05394 /* ichartjsPieViewController.m */,
 			);
 			path = WebviewTest;
 			sourceTree = "<group>";
@@ -221,6 +235,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4795527A17453F9800D05394 /* ichart.1.1.min.js in Resources */,
+				4795526A17451AE600D05394 /* MSLine4.js in Resources */,
+				4795526B17451AE600D05394 /* firebug-lite.js in Resources */,
+				4795526C17451AE600D05394 /* FusionCharts.HC.Charts.js in Resources */,
+				4795526D17451AE600D05394 /* FusionCharts.HC.js in Resources */,
+				4795526E17451AE600D05394 /* FusionCharts.jqueryplugin.js in Resources */,
+				4795526F17451AE600D05394 /* FusionCharts.js in Resources */,
+				4795527017451AE600D05394 /* FusionChartsExportComponent.js in Resources */,
+				4795527117451AE600D05394 /* jquery.min.js in Resources */,
 				47F55FAE173BE2B2001ADF89 /* InfoPlist.strings in Resources */,
 				47F55FB6173BE2B3001ADF89 /* Default.png in Resources */,
 				47F55FB8173BE2B3001ADF89 /* Default@2x.png in Resources */,
@@ -231,6 +254,7 @@
 				47F55FCE173C051F001ADF89 /* chart_bg.jpg in Resources */,
 				47F55FCF173C051F001ADF89 /* index.html in Resources */,
 				0E91AEE3173CFE07004F4B40 /* data.json in Resources */,
+				4795527E1745434200D05394 /* ichartjs_line.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,18 +268,10 @@
 				47F55FB0173BE2B2001ADF89 /* main.m in Sources */,
 				47F55FB4173BE2B2001ADF89 /* AppDelegate.m in Sources */,
 				47F55FC0173BE2B3001ADF89 /* ViewController.m in Sources */,
-				47F55FC7173BE3D8001ADF89 /* test.js in Sources */,
-				47F55FD1173C0530001ADF89 /* jscharts.js in Sources */,
 				0E91AECC173CFCA2004F4B40 /* LineViewController.m in Sources */,
 				0E91AED0173CFCB8004F4B40 /* PieViewController.m in Sources */,
-				0E91AEDB173CFE07004F4B40 /* MSLine4.js in Sources */,
-				0E91AEDC173CFE07004F4B40 /* firebug-lite.js in Sources */,
-				0E91AEDD173CFE07004F4B40 /* FusionCharts.HC.Charts.js in Sources */,
-				0E91AEDE173CFE07004F4B40 /* FusionCharts.HC.js in Sources */,
-				0E91AEDF173CFE07004F4B40 /* FusionCharts.jqueryplugin.js in Sources */,
-				0E91AEE0173CFE07004F4B40 /* FusionCharts.js in Sources */,
-				0E91AEE1173CFE07004F4B40 /* FusionChartsExportComponent.js in Sources */,
-				0E91AEE2173CFE07004F4B40 /* jquery.min.js in Sources */,
+				4795527417453EC700D05394 /* ichartjsLineViewController.m in Sources */,
+				4795527717453ED500D05394 /* ichartjsPieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

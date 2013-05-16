@@ -10,7 +10,6 @@
 
 @interface LineViewController : UIViewController
 
-
 // Chart properties.
 @property (strong, nonatomic) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) NSMutableString *htmlContent;

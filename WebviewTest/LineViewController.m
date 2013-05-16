@@ -68,7 +68,7 @@
 		// Set chart width and height depending on the screen's orientation.
 		if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
 			self.chartWidth = 300;
-			self.chartHeight = 390;
+			self.chartHeight = 350;
 		} else if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
 			self.chartWidth = 440;
 			self.chartHeight = 280;
@@ -100,7 +100,7 @@
 		[self.htmlContent appendString:@"<script type='text/javascript'>"];
         [self.htmlContent appendString:@"FusionCharts.setCurrentRenderer(\"javascript\");"];
 		[self.htmlContent appendFormat:@"var chart_object = new FusionCharts('MSLine.swf', 'ChartId', '%f', '%f', '0', '0');", self.chartWidth, self.chartHeight];
-        //		[self.htmlContent appendFormat:@"chart_object.setXMLData('%@');", self.chartData];
+//		[self.htmlContent appendFormat:@"chart_object.setXMLData('%@');", self.chartData];
         //        eval("\(\"+json+\")\")
         [self.htmlContent appendFormat:@"chart_object.setJSONData(%@);",data];
 		[self.htmlContent appendString:@"chart_object.render('chart_container');"];

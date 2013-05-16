@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.currentOrientation = self.interfaceOrientation;
+	[self createChartData:self.currentOrientation];
+
 }
 
 - (void)didReceiveMemoryWarning
