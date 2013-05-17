@@ -1,88 +1,159 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>ichartjs 示例</title>
-		<script type="text/javascript" src="ichart.1.1.min.js"></script>
-		<script type="text/javascript">
-            $(function(){
-              var data = [
-                          {name : 'UC浏览器',value : 40.0,color:'#4572a7'},
-                          {name : 'QQ浏览器',value : 37.1,color:'#aa4643'},
-                          {name : '欧朋浏览器',value : 13.8,color:'#89a54e'},
-                          {name : '百度浏览器',value : 1.6,color:'#80699b'},
-                          {name : '海豚浏览器',value : 1.4,color:'#92a8cd'},
-                          {name : '天天浏览器',value : 1.2,color:'#db843d'},
-                          {name : '其他',value : 4.9,color:'#a47d7c'}
-                          ];
-              
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            ichartjs 示例
+        </title>
+        <script type="text/javascript" src="ichart.1.1.min.js">
+            </script>
+        <script type="text/javascript">
+            $(function() {
+              var data = [{
+                          name: 'UC浏览器',
+                          value: 40.0,
+                          color: '#4572a7'
+                          },
+                          {
+                          name: 'QQ浏览器',
+                          value: 37.1,
+                          color: '#aa4643'
+                          },
+                          {
+                          name: '欧朋浏览器',
+                          value: 13.8,
+                          color: '#89a54e'
+                          },
+                          {
+                          name: '百度浏览器',
+                          value: 1.6,
+                          color: '#80699b'
+                          },
+                          {
+                          name: '海豚浏览器',
+                          value: 1.4,
+                          color: '#92a8cd'
+                          },
+                          {
+                          name: '天天浏览器',
+                          value: 1.2,
+                          color: '#db843d'
+                          },
+                          {
+                          name: '其他',
+                          value: 4.9,
+                          color: '#a47d7c'
+                          }];
               
               var chart = new iChart.Pie2D({
-                                           render : 'canvasDiv',
+                                           render: 'canvasDiv',
                                            data: data,
-                                           title : {
-                                           text : '2012年第3季度中国第三方手机浏览器市场份额',
-                                           color : '#3e576f'
+                                           title: {
+                                           text: 'Mobile-Friendly Distribution',
+                                           height: 40,
+                                           fontsize: 20,
+                                           color: '#282828'
                                            },
-//                                           footnote : {
-//                                           text : 'ichartjs.com',
-//                                           color : '#486c8f',
-//                                           fontsize : 11,
-//                                           padding : '0 38'
-//                                           },
-                                           sub_option : {
-                                           label : {
-                                           background_color:null,
-                                           sign:false,//设置禁用label的小图标
-                                           padding:'0 -30',
-                                           border:{
-                                           enable:false,
-                                           color:'#666666'
+                                           //                                           footnote : {
+                                           //                                           text : 'ichartjs.com',
+                                           //                                           color : '#486c8f',
+                                           //                                           fontsize : 12,
+                                           //                                           padding : '0 38'
+                                           //                                           },
+                                           sub_option: {
+                                           mini_label_threshold_angle: 40,
+                                           //迷你label的阀值,单位:角度
+                                           mini_label: { //迷你label配置项
+                                           fontsize: 20,
+                                           fontweight: 600,
+                                           color: '#ffffff'
                                            },
-                                           fontsize:1,
-                                           fontweight:300,
-                                           color : '#4572a7'
+                                           label: {
+                                           background_color: null,
+                                           sign: false,
+                                           //设置禁用label的小图标
+                                           padding: '0 4',
+                                           border: {
+                                           enable: false,
+                                           color: '#666666'
                                            },
-                                           border : {
-                                           width : 2,
-                                           color : '#ffffff'
+                                           fontsize: 11,
+                                           fontweight: 600,
+                                           color: '#4572a7'
+                                           },
+                                           border: {
+                                           width: 2,
+                                           color: '#ffffff'
+                                           },
+                                           listeners: {
+                                           parseText: function(d, t) {
+                                           return d.get('value') + "%"; //自定义label文本
+                                           },
+                                           click: function(sector, name, index) {
+                                           console.log(sector);
+                                           console.log(name);
+                                           console.log(index);
+                                           }
+                                           
                                            }
                                            },
-                                           shadow : true,
-                                           shadow_blur : 6,
-                                           shadow_color : '#aaaaaa',
-                                           shadow_offsetx : 0,
-                                           shadow_offsety : 0,
-                                           background_color:'#fefefe',
-                                           offsetx:0,//设置向x轴负方向偏移位置60px
-                                           offset_angle:-120,//逆时针偏移120度
-                                           showpercent:true,
-                                           decimalsnum:2,
-                                           width : 320,
-                                           height : 400,
-                                           radius:100
+                                           legend: {
+                                           enable: true,
+                                           column: 3,
+                                           //                                           row:'max',
+                                           padding: 10,
+                                           //                                           offsetx:10,
+                                           offsety: 140,
+                                           color: '#3e576f',
+                                           fontsize: 10,
+                                           //文本大小
+                                           sign_size: 10,
+                                           //小图标大小
+                                           line_height: 20,
+                                           //设置行高
+                                           sign_space: 5,
+                                           //小图标与文本间距
+                                           border: true,
+                                           align: 'center',
+                                           valign: 'top|bottom',
+                                           background_color: null,
+                                           //透明背景
+                                           listeners: {
+                                           click: function(sector, name, index) {
+                                           console.log(sector);
+                                           console.log(name);
+                                           console.log(index.index);
+                                           //                                           sector.bound(index.index);
+                                           }
+                                           }
+                                           },
+                                           shadow: true,
+                                           shadow_blur: 6,
+                                           shadow_color: '#aaaaaa',
+                                           shadow_offsetx: 0,
+                                           shadow_offsety: 0,
+                                           background_color: '#f1f1f1',
+                                           align: 'center',
+                                           //右对齐
+                                           offsetx: 0,
+                                           //设置向x轴负方向偏移位置60px
+                                           offset_angle: -90,
+                                           //逆时针偏移120度
+                                           width: 305,
+                                           height: 400,
+                                           radius: 100,
+                                           animation: true,
+                                           mutex: true
                                            });
-              //利用自定义组件构造右侧说明文本
-//              chart.plugin(new iChart.Custom({
-//                                             drawFn:function(){
-//                                             //计算位置
-//                                             var y = chart.get('originy'),
-//                                             w = chart.get('width');
-//                                             
-//                                             //在右侧的位置，渲染说明文字
-//                                             chart.target.textAlign('start')
-//                                             .textBaseline('middle')
-//                                             .textFont('600 16px Verdana')
-//                                             .fillText('UC浏览器、\n手机QQ浏览器及\n欧朋浏览器的份额\n位列第三方手机浏览器\n市场前三甲',w-220,y-40,false,'#be5985',false,20);
-//                                             }
-//                                             }));
-              
               chart.draw();
               });
-            
-			</script>
+            </script>
     </head>
+    
     <body>
-        <div id='canvasDiv'></div>
+        <div id='canvasDiv'>
+        </div>
     </body>
+    
 </html>
